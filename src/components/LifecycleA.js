@@ -17,7 +17,7 @@ class LifecycleA extends Component {
     }
 
     componentDidMount() {
-        console.log('LifecycleA componentDidMount')
+        console.log('*** LifecycleA componentDidMount')
     }
 
     render() {
@@ -26,7 +26,7 @@ class LifecycleA extends Component {
                 {console.log('LifecycleA render')}
                 <div>
                     <h1>{this.state.name}</h1>
-                    {/*      */}
+                    <LifecycleB />
                 </div>
             </>
         )

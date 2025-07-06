@@ -11,12 +11,12 @@ import UserGreeting from './components/UserGreeting';
 import NameLists from './components/NameLists';
 import StyleSheet from './components/StyleSheet';
 import InlineStyle from './components/InlineStyle';
+import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 import './appStyles.css'
 import styles1 from './appStyles1.module.css'
 import styles2 from './appStyles2.module.css'
-import Form from './components/Form';
-import LifecycleA from './components/LifecycleA';
 
 class App extends Component {
   render() {
