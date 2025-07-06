@@ -4,6 +4,8 @@ class RefDemo extends Component {
 	constructor(props) {
 		super(props);
 		this.inputRef = React.createRef();
+
+		// old method of creating a ref using callback
 		this.callBackRef = null;
 		this.setCallBackRef = (element) => {
 			this.callBackRef = element;
