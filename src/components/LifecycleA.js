@@ -20,12 +20,36 @@ class LifecycleA extends Component {
         console.log('*** LifecycleA componentDidMount')
     }
 
+    shouldComponentUpdate() {
+        console.log('LifecycleA shouldComponentUpdate')
+        return true
+    }
+
+    getSnapshotBeforeUpdate(prevProps, prevState) {
+        console.log('LifecycleA getSnapshotBeforeUpdate')
+        return null
+    }
+
+    // componentDidUpdate: commonly use methods in update lifecycle
+    componentDidUpdate() {
+        console.log('LifecycleA componentDidUpdate')
+    }
+
+    changeState = () => {
+        console.log('+++ LifecycleA changeState')
+        // This will trigger the lifecycle methods in update lifecycle
+        this.setState({
+            name: 'Updated LifecycleA'
+        })
+    }
+    // render: commonly use methods in lifecycle
     render() {
         return (
             <>
                 {console.log('LifecycleA render')}
                 <div>
                     <h1>{this.state.name}</h1>
+                    <button onClick={this.changeState}>Update LifecycleA</button>
                     <LifecycleB />
                 </div>
             </>
