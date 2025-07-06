@@ -16,11 +16,22 @@ class RefDemo extends Component {
 		this.inputRef.current.focus();
 	};
 
+	showInputValue = () => {
+		alert(this.inputRef.current.value);
+	};
+
+	clearInputValue = () => {
+		this.inputRef.current.value = "";
+		this.focusInput();
+	};
+
 	render() {
 		return (
 			<div>
 				<input type="text" ref={this.inputRef} />
 				<button onClick={this.focusInput}>Focus Input</button>
+				<button onClick={this.showInputValue}>Show Input Value</button>
+				<button onClick={this.clearInputValue}>Clear Input Value</button>
 			</div>
 		);
 	}
