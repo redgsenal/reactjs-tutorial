@@ -19,12 +19,16 @@ import styles1 from "./appStyles1.module.css";
 import styles2 from "./appStyles2.module.css";
 import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
+import PureComp from "./components/PureComp";
+import ParentComp from "./components/ParentComp";
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<Table /> {/* Uncomment the components you want to render */}
+				<ParentComp />
+				{/* <h1 className="error">Error in Hello World</h1>
+				{/* <Table />} */}
 				{/* <FragmentDemo /> */}
 				{/* <LifecycleA /> */}
 				{/* <Form /> */}
