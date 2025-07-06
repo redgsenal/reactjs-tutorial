@@ -16,12 +16,14 @@ import './appStyles.css'
 import styles1 from './appStyles1.module.css'
 import styles2 from './appStyles2.module.css'
 import Form from './components/Form';
+import LifecycleA from './components/LifecycleA';
 
 class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Form />
+        <LifecycleA />
+        {/* <Form /> */}
         {/* <h1 className={styles1.success}>Success in Hello World</h1>
         <h1 className={styles2.success}>Success in Hello World</h1>
         <h1 className='${styles.error}'>Error in Hello World</h1> */}
