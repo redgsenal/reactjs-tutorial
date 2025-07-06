@@ -1,36 +1,34 @@
 import React, { Component } from 'react'
-import LifecycleB from './LifecycleB'
 
-class LifecycleA extends Component {
+class LifecycleB extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
-            name: 'LifecycleA'
+            name: 'LifecycleB'
         }
-        console.log('LifecycleA constructor')
+        console.log('LifecycleB constructor')
     }
 
     static getDerivedStateFromProps(nextProps, prevState) {
-        console.log('LifecycleA getDerivedStateFromProps')
+        console.log('LifecycleB getDerivedStateFromProps')
         return null
     }
 
     componentDidMount() {
-        console.log('LifecycleA componentDidMount')
+        console.log('LifecycleB componentDidMount')
     }
 
     render() {
         return (
             <>
-                {console.log('LifecycleA render')}
+                {console.log('LifecycleB render')}
                 <div>
                     <h1>{this.state.name}</h1>
-                    {/*      */}
                 </div>
             </>
         )
     }
 }
 
-export default LifecycleA
+export default LifecycleB
