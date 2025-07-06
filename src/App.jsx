@@ -21,12 +21,14 @@ import FragmentDemo from "./components/FragmentDemo";
 import Table from "./components/Table";
 import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
+import RefDemo from "./components/RefDemo";
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<ParentComp />
+				<RefDemo />
+				{/* <ParentComp /> */}
 				{/* <h1 className="error">Error in Hello World</h1>
 				{/* <Table />} */}
 				{/* <FragmentDemo /> */}
