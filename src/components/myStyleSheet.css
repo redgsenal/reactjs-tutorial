@@ -1,0 +1,23 @@
+/* my custom styles */
+.my-style {
+    color: blue;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.primary {
+    background-color: lightblue;
+    color: orange;
+    font-weight: bold;
+}
+
+.secondary {
+    background-color: lightgreen;
+    color: blue;
+    font-weight: bold;
+}
+
+.font-xl {
+    font-size: 62px;
+}
