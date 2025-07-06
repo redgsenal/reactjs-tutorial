@@ -1,8 +1,9 @@
 import React, { Component, PureComponent } from "react";
 import RegularComp from "./RegularComp";
 import PureComp from "./PureComp";
+import MemoComp from "./MemoComp";
 
-export class ParentComp extends PureComponent {
+export class ParentComp extends Component {
 	constructor(props) {
 		super(props);
 
@@ -14,7 +15,7 @@ export class ParentComp extends PureComponent {
 	componentDidMount() {
 		setInterval(() => {
 			this.setState({
-				message: "Updated message from Parent Component after 2 seconds",
+				message: "Hello from Parent Component",
 			});
 		}, 2000);
 	}
@@ -24,8 +25,9 @@ export class ParentComp extends PureComponent {
 		return (
 			<div>
 				<h3>{this.state.message}</h3>
-				<RegularComp message={this.state.message} />
-				<PureComp message={this.state.message} />
+				<MemoComp message={this.state.message} />
+				{/* <RegularComp message={this.state.message} /> */}
+				{/* <PureComp message={this.state.message} /> */}
 			</div>
 		);
 	}
