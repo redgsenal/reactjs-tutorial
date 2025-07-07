@@ -24,12 +24,14 @@ import ParentComp from "./components/ParentComp";
 import RefDemo from "./components/RefDemo";
 import RefInputParent from "./components/RefInputParent";
 import FRParentInput from "./components/FRParentInput";
+import PortalDemo from "./components/PortalDemo";
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<FRParentInput />
+				<PortalDemo />
+				{/* <FRParentInput /> */}
 				{/* <RefInputParent /> */}
 				{/* <RefDemo /> */}
 				{/* <ParentComp /> */}
