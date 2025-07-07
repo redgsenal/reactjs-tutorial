@@ -23,16 +23,18 @@ import PureComp from "./components/PureComp";
 import ParentComp from "./components/ParentComp";
 import RefDemo from "./components/RefDemo";
 import RefInputParent from "./components/RefInputParent";
+import FRParentInput from "./components/FRParentInput";
 
 class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<RefInputParent />
+				<FRParentInput />
+				{/* <RefInputParent /> */}
 				{/* <RefDemo /> */}
 				{/* <ParentComp /> */}
-				{/* <h1 className="error">Error in Hello World</h1>
-				{/* <Table />} */}
+				{/* <h1 className="error">Error in Hello World</h1> */}
+				{/* <Table /> */}
 				{/* <FragmentDemo /> */}
 				{/* <LifecycleA /> */}
 				{/* <Form /> */}
